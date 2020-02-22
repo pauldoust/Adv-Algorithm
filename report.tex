@@ -1,0 +1,132 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage{comment} 
+\usepackage{fullpage}
+\usepackage{times}
+\usepackage{amsmath,amssymb,amsfonts,textcomp}
+\usepackage{graphicx}
+\usepackage{float,flafter}
+\usepackage{hyperref}
+\usepackage{inputenc}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{subfiles}
+\usepackage{natbib}
+
+\begin{document}
+\begin{center}
+\hrule
+
+\vspace{.4cm}
+{\bf {\Huge TSP Report}}
+\vspace{.2cm}
+\end{center}
+{Mohammed Poul Doust,  Mohammed Zaki Nassar,  Robin Khatri,  Louise Harding,  Laetitia Couge}  \\
+\hrule
+
+\section{Introduction}
+
+%start algo section
+\section{Brute Force}
+
+\subsection{Details of implementation}
+
+\subsection{Results}
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+	\hline
+	No of vertices & Sparcity  & Execution Time(s) & Min Path Cost & Problem Set & Library  \\
+	\hline\hline
+	5 & 5 & 0.05 & 0.00 & TSP-5-5 & Gen\\
+	\hline
+	7 & 7 & 20.00 &20.83& TSP-7-7 & Gen\\
+	\hline
+	10 & 7 & 40.90 &41.67& TSP-10-7 & Gen\\
+	\hline
+	13 & 10 & 61.40 &62.50& TSP-13-10 & Gen\\
+	\hline
+	14 & 14 & 81.90 &83.33& TSP-14-14 & Gen\\
+	\hline
+	15 & 5 & 102.00 &104.17& TSP-5-5 & Gen\\
+	\hline
+	16 & 7 & 122.30 &125.00& TSP-5-5 & Gen\\
+	\hline
+	17 & 12 & 142.00 &145.83& TSP-5-5 & Gen\\
+	\hline
+	18 & 4 & 161.70 &166.67& TSP-5-5 & Gen\\
+	\hline
+	18 & 6 & 181.50 &187.50& TSP-5-5 & Gen\\
+	\hline
+\end{tabular}
+\caption{Measurement result of Exp.1}
+\label{t1}
+\end{table}
+
+
+\subsection{Comments}
+\pagebreak
+%finish algo section
+
+\section{Randomized algorithm}
+\subfile{randomTSP/algo_random}
+
+\section{Dynamic Programming algorithm}
+\subfile{dynamic/algo_dp}
+
+\section{Branch and Bound}
+
+\subsection{Details of implementation}
+
+\subsection{Results}
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+	\hline
+	No of vertices & Sparcity  & Execution Time(s) & Min Path Cost & Problem Set & Library  \\
+	\hline\hline
+	5 & 5 & 0.05 & 0.00 & TSP-5-5 & Gen\\
+	\hline
+	7 & 7 & 20.00 &20.83& TSP-7-7 & Gen\\
+	\hline
+	10 & 7 & 40.90 &41.67& TSP-10-7 & Gen\\
+	\hline
+	13 & 10 & 61.40 &62.50& TSP-13-10 & Gen\\
+	\hline
+	14 & 14 & 81.90 &83.33& TSP-14-14 & Gen\\
+	\hline
+	15 & 5 & 102.00 &104.17& TSP-5-5 & Gen\\
+	\hline
+	16 & 7 & 122.30 &125.00& TSP-5-5 & Gen\\
+	\hline
+	17 & 12 & 142.00 &145.83& TSP-5-5 & Gen\\
+	\hline
+	18 & 4 & 161.70 &166.67& TSP-5-5 & Gen\\
+	\hline
+	18 & 6 & 181.50 &187.50& TSP-5-5 & Gen\\
+	\hline
+\end{tabular}
+\caption{Measurement result of Exp.1}
+\label{t1}
+\end{table}
+
+
+\subsection{Comments}
+\pagebreak
+\section{Comparison of algorithms}
+
+\section{Summary}
+
+
+
+
+\bibliographystyle{te}
+\bibliography{research}
+
+\end{document}
